@@ -1,0 +1,352 @@
+.img1{
+
+}
+
+
+
+.container1-pg1{
+  background-color: #f9f6ef;
+  padding-bottom: 50px;
+}
+
+.nav1 ul div{
+  font-size: 19px;
+  float: right;
+  margin-right: 100px;
+margin-top:-0.3%;
+}
+.tag1{
+  display: inline;
+  margin-left: 15px;
+  color: white;
+}
+.ulhome1{
+  position: fixed;
+  display: inline;
+  background-color: #c60000;
+  float: right;
+  width: 100%;
+  z-index: 3;
+  text-decoration: none;
+  padding-top: 4px;
+}
+.ulhome2{
+  text-align: center;
+  font-weight: 550;
+  font-size: 18px;
+}
+
+.nav1{
+  height: 60px;
+
+}
+
+.nav2{
+  background-color: none;
+}
+
+
+.pg1-h1{
+  color: #c60000;
+  margin: 50px 0px 30px;
+  font-size: 50px;
+  font-weight: 750;
+}
+.pg1-h4{
+  margin: 0px 0px 40px;
+}
+
+
+.container1-pg1 div.card {
+  width: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.container1-pg1 div.card:hover {
+  width: auto;
+  opacity: 0.95;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.container1-pg1 div.header11 {
+    color: white;
+    padding: 10px;
+}
+
+.container1-pg1 div.contain {
+    padding: 10px;
+}
+
+
+.container1-pg1 div.fawsome{
+  margin: 10px 0px;
+  color: #c60000;
+  font-size: 40px;
+}
+.pg1-btn1{
+  margin-top: 50px;
+  color: white;
+  height: 45px;
+  background-color: #c60000;
+}
+.pg1-btn1:hover{
+  margin-top: 50px;
+  background-color: #800000;
+  color: white;
+  height: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.container2-pg1{
+    background-color: #f9f6ef;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #c60000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 2px;
+}
+
+/* Container around content */
+.container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 3px solid #c60000;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0px;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 0.8;
+    right: 30px;
+    border: medium solid #c60000;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #c60000;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 0.8;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #c60000 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px solid #c60000;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #c60000 transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 12px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

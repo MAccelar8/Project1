@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+.nav1{
+  background-color: #c60000;
+}
+.nav1 a{
+  color: white;
+}
+.nav1 a:hover{
+  color: grey;
+}
+.mary{
+  color: White;
+  font-weight: 650;
+}
+.navdiv{
+  color: white;
+}
+.navbar-toggler {
+  border-color: white;
+  background-color: white;
+}
+@media (min-width: 1000px) {
+  .navdiv{
+    margin-left: 700px;
+  }
+ }
