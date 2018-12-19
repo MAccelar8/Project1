@@ -1,0 +1,27 @@
+<app-spnavbar></app-spnavbar>
+<div class="result-heading text-center">
+  <h3>Results</h3>
+</div>
+<div id="result-jumbo"class="jumbotron">
+  <div class="result-scroll">
+  <table class="table table-striped text-center border-dark">
+    <thead>
+      <tr>
+        <th scope="col">Subject</th>
+        <th scope="col">Internal Result</th>
+        <th scope="col">External result</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let s of s5results.sub">
+        <td>{{s.subname}}</td>
+        <td>{{s.internal}}</td>
+        <td>{{s.external}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+  </div>
+</div>
+<app-inverted-footer></app-inverted-footer>

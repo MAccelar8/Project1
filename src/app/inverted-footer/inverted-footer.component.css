@@ -1,0 +1,16 @@
+
+.login-footer{
+    background-color: #c60000;
+    width: 100%;
+    padding: 50px;
+  }
+.login-footer-link a{
+    text-decoration: none;
+    color: #f9f6ef;
+  }
+.login-footer-link a:hover{
+    text-decoration: none;
+  }
+.footer-follow a{
+  padding-left: 10px;
+}

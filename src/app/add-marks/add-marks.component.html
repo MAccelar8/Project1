@@ -1,0 +1,70 @@
+<app-spnavbar></app-spnavbar>
+<div class="jumbotron addmark-back">
+  <form (ngSubmit)="addMarks(markForm)" #markForm="ngForm">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-center">ADD MARKS</h2>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:1em">
+      <div class="col-md-2">
+        Subject:<label for="">{{subj}}</label>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:2em">
+      <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="internal" checked ngModel>
+    <label class="form-check-label" for="exampleRadios1" style="margin-right:1em">
+      internal
+  </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="external" ngModel>
+      <label class="form-check-label" for="exampleRadios2">
+      External
+  </label>
+</div>
+    </div>
+    <div *ngFor="let s of stds" class="row">
+      <div class="col-md-3 spacing">
+        <h3>{{s.st_id}}</h3>
+      </div>
+      <div class="col-md-3">
+        <input class="form-control form-control-lg" type="text"  name="{{s.st_id}}" ngModel>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-md-3 spacing">
+        <h3>16ceuog052</h3>
+      </div>
+      <div class="col-md-3">
+        <input class="form-control form-control-lg" type="text"  name="text1" ngModel>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h3>16ceuog053</h3>
+      </div>
+      <div class="col-md-3 spacing">
+        <input class="form-control form-control-lg" type="text" name="text2" ngModel>
+      </div>
+    </div>
+    <div class="row">
+      <div  class="col-md-3">
+        <h3>16ceuog054</h3>
+      </div>
+      <div class="col-md-3 spacing">
+        <input class="form-control form-control-lg" type="text"  name="text3" ngModel>
+      </div>
+    </div> -->
+    <div class="row">
+      <button type="submit" name="button" class="btn btn-danger <btn-md></btn-md>">Save</button>
+    </div>
+  </div>
+
+    </form>
+</div>
+
+<app-inverted-footer></app-inverted-footer>

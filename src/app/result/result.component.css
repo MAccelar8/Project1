@@ -1,0 +1,12 @@
+#result-jumbo{
+  margin-bottom: 0px;
+}
+.result-heading{
+  background-color: lightgrey;
+  color: #c60000;
+  padding: 30px;
+  font-weight: 700;
+}
+.result-scroll{
+  overflow: auto;
+}

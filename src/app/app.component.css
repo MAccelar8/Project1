@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
 .nav1{
   background-color: #c60000;
 }
@@ -19,8 +19,4 @@
   border-color: white;
   background-color: white;
 }
-@media (min-width: 1000px) {
-  .navdiv{
-    margin-left: 700px;
-  }
- }
+*/

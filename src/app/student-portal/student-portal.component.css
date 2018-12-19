@@ -1,0 +1,22 @@
+.portal-home-table{
+  font-size: 20px;
+  font-weight: bold;
+}
+.sp-home{
+    background-color: lightgrey;
+    padding: 50px;
+}
+.sp-thought{
+  background-color: #c60000;
+  padding: 40px;
+  color: #f6f9ef;
+  font-family: 'Gochi Hand', cursive;
+  font-weight: bold;
+
+}
+@media (max-width: 400px) {
+  .sp-home{
+    background-color: #f6f9ef;
+    padding: 0px;
+  }
+}

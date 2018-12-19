@@ -1,0 +1,35 @@
+.login-navbar{
+  background-color: #f9f6ef;
+}
+.login-text{
+  color: #f9f6ef;
+}
+.login-btn{
+  border-color: #f9f6ef;
+  font-weight: bold;
+}
+.login-mid{
+  background-color: #c60000;
+  padding: 70px;
+}
+.login-btn:hover{
+  background-color: #f9f6ef;
+  color: red;
+  font-weight: bold;
+}
+.login-head{
+  padding-bottom: 50px;
+  color: white;
+  font-size: 4vw;
+}
+  .login-footer{
+    background-color: #f9f6ef;
+    padding: 25px;
+  }
+  .login-footer-link a{
+    text-decoration: none;
+    color: #c60000;
+  }
+  .login-footer-link a:hover{
+    text-decoration: none;
+  }
